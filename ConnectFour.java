@@ -196,8 +196,8 @@ public class ConnectFour{
 			}
 		}
 		//check downward diagonal
-		for( row = 0; row < board.length - 3; row++){
-			for(int col = 0; col < board[0].length - 3; col++){
+		for( row = 0; row < WIDTH - 3; row++){
+			for(int col = 0; col < HEIGHT - 3; col++){
 				if (board[row][col] == players   && 
 						board[row+1][col+1] == players &&
 						board[row+2][col+2] == players &&
